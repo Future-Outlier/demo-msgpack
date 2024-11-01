@@ -14,3 +14,6 @@ flytectl demo start --image futureoutlier/flyte-sandbox:msgpack-idl-1101 --force
 ```zsh
 futureoutlier/flytekit:6oCREy62XKWzgJswOZyZUg
 ```
+
+4. watch the execution result
+<img width="1028" alt="image" src="https://github.com/user-attachments/assets/65dd0726-d058-4dad-a242-c5d824952dbe">
