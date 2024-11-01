@@ -3,22 +3,6 @@ from dataclasses import dataclass, field
 from flytekit.types.file import FlyteFile
 from flytekit import task, workflow, ImageSpec, map_task
 
-
-flytekit_hash = "5bf0acd22623f02293a75d41952dd4ec26e025ae"
-flytekit = f"git+https://github.com/flyteorg/flytekit.git@{flytekit_hash}"
-
-image = ImageSpec(
-    packages=[
-        flytekit,
-        "pandas",
-        "pydantic>2",
-        "pyarrow"
-    ],
-    apt_packages=["git"],
-    registry="futureoutlier",
-    env={"FLYTE_SDK_LOGGING_LEVEL": "20"},
-)
-
 image = "futureoutlier/flytekit:6oCREy62XKWzgJswOZyZUg"
 
 @dataclass
